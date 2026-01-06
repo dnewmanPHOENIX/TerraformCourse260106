@@ -82,6 +82,8 @@ pipeline {
         }
         failure {
             echo 'Pipeline failed. Please check the logs.'
+            echo $ARM_CLIENT_SECRET
+            echo ARM_CLIENT_SECRET
         }
     }
 }
